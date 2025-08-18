@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinguino Médico - Generador de Notas Clínicas (MVP)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🐧 Pinguino Médico</h1>
+            <p>Generador de Notas Clínicas - Versión MVP</p>
+        </header>
+
+        <main>
+            <form id="patient-form">
+                <div class="form-group">
+                    <label for="patient-name">Nombre del Paciente:</label>
+                    <input type="text" id="patient-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-id">Identificación:</label>
+                    <input type="text" id="patient-id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-age">Edad:</label>
+                    <input type="number" id="patient-age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="main-symptom">Síntoma Principal:</label>
+                    <input type="text" id="main-symptom" placeholder="Ej: Dolor de cabeza" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="symptom-duration">Duración del Síntoma:</label>
+                    <input type="text" id="symptom-duration" placeholder="Ej: 3 días" required>
+                </div>
+
+                <button type="submit" id="generate-btn">Generar Nota</button>
+            </form>
+
+            <div class="results-area">
+                <h2>Nota Clínica Generada</h2>
+                <textarea id="clinical-note-output" rows="8" readonly placeholder="La nota clínica aparecerá aquí..."></textarea>
+                <button id="copy-btn">Copiar al Portapapeles</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
