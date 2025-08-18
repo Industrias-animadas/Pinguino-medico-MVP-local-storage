@@ -30,7 +30,3 @@ Esta es una versión MVP (Producto Mínimo Viable). Algunas ideas para el futuro
 - Implementar `localStorage` para guardar el historial de notas.
 - Añadir más campos y plantillas de notas personalizables.
 - Mejorar el diseño para que sea completamente _responsive_.
-
-- Implementar `localStorage` para guardar el historial de notas.
-- Añadir más campos y plantillas de notas personalizables.
-- Mejorar el diseño para que sea completamente _responsive_.
